@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-06T23:33:18.119722" rpa="false" schemaversion="5">
+<suite id="s1" name="Web03" source="c:\Users\alexander.j.sanchez\Autome01\Web03.robot">
+<test id="s1-t1" name="Login en la página web" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-06T23:33:18.540871" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io/'.</msg>
+<arg>https://demo.testim.io/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-06T23:33:18.540871" elapsed="4.369300"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-06T23:33:22.910677" elapsed="0.026663"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-06T23:33:27.938895" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-06T23:33:22.938351" elapsed="5.001053"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-06T23:33:27.944115" level="INFO">Clicking element 'xpath=//button[contains(text(),'Log in')]'.</msg>
+<arg>xpath=//button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-06T23:33:27.940742" elapsed="0.070810"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=input.theme__inputElement___27dyY</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-06T23:33:28.012056" elapsed="0.023444"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-06T23:33:28.036004" level="INFO">Typing text 'MiTexto123' into text field 'xpath=//input[@tabindex='1']'.</msg>
+<arg>xpath=//input[@tabindex='1']</arg>
+<arg>MiTexto123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-06T23:33:28.036004" elapsed="0.086966"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-06T23:33:28.124520" level="INFO">Typing text 'MiSuperSecreta1232' into text field 'xpath=//input[@tabindex='2']'.</msg>
+<arg>xpath=//input[@tabindex='2']</arg>
+<arg>MiSuperSecreta1232</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-06T23:33:28.124520" elapsed="0.077419"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-06T23:33:28.202945" level="INFO">Clicking button 'xpath=//button[@type='submit' and contains(., 'Log in')]'.</msg>
+<arg>xpath=//button[@type='submit' and contains(., 'Log in')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-06T23:33:28.201939" elapsed="0.065992"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-06T23:33:38.269029" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-06T23:33:28.268435" elapsed="10.001117"/>
+</kw>
+<status status="PASS" start="2025-03-06T23:33:18.539318" elapsed="19.731826"/>
+</test>
+<status status="PASS" start="2025-03-06T23:33:18.130972" elapsed="20.143286"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Web03" id="s1" pass="1" fail="0" skip="0">Web03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
