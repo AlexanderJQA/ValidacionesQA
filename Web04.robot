@@ -11,8 +11,9 @@ Login to saucedemo
   Click Element     xpath=//*[@id="login-button"]
   Wait Until Element Is Visible  xpath=//*[@id="add-to-cart-sauce-labs-backpack"]  timeout=10s
   Click Element     xpath=//button[@data-test="add-to-cart-sauce-labs-backpack"]
-  Click Element     xpath=//*[@id="shopping_cart_container"]/a  
-
+  Click Element     xpath=//*[@id="shopping_cart_container"]/a/span  
+  Sleep              5
+  Click Element    xpath=//button[@id="continue-shopping"]
   Sleep  10
 
   Close Browser  
