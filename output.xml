@@ -1,77 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-08T20:12:36.549627" rpa="false" schemaversion="5">
-<suite id="s1" name="Web03" source="C:\Users\alexander.j.sanchez\Autome01\Web03.robot">
-<test id="s1-t1" name="Login en la página web" line="6">
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-13T22:42:41.618545" rpa="false" schemaversion="5">
+<suite id="s1" name="Web04" source="C:\Users\alexander.j.sanchez\autome01\Web04.robot">
+<test id="s1-t1" name="Login to saucedemo" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-08T20:12:36.958945" level="INFO">Opening browser 'chrome' to base url 'https://demo.testim.io/'.</msg>
-<arg>https://demo.testim.io/</arg>
+<msg time="2025-03-13T22:42:42.344899" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-08T20:12:36.957412" elapsed="3.539833"/>
+<status status="PASS" start="2025-03-13T22:42:42.344899" elapsed="4.349319"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-08T20:12:40.497603" elapsed="0.031757"/>
+<status status="PASS" start="2025-03-13T22:42:46.694218" elapsed="0.030208"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T20:12:45.530434" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T20:12:40.529360" elapsed="5.001074"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-08T20:12:45.530434" level="INFO">Clicking element 'xpath=//button[contains(text(),'Log in')]'.</msg>
-<arg>xpath=//button[contains(text(),'Log in')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T20:12:45.530434" elapsed="0.078023"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>css=input.theme__inputElement___27dyY</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-08T20:12:45.608457" elapsed="0.025895"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-08T20:12:45.634352" level="INFO">Typing text 'Maria de alex' into text field 'xpath=//input[@tabindex='1']'.</msg>
-<arg>xpath=//input[@tabindex='1']</arg>
-<arg>Maria de alex</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T20:12:45.634352" elapsed="0.086551"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T20:12:55.722953" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T20:12:45.722457" elapsed="10.000496"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-08T20:12:55.723470" level="INFO">Typing text 'MiSuperSecreta1232' into text field 'xpath=//input[@tabindex='2']'.</msg>
-<arg>xpath=//input[@tabindex='2']</arg>
-<arg>MiSuperSecreta1232</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T20:12:55.723470" elapsed="0.085270"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T20:13:00.809163" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-03-13T22:42:51.725360" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T20:12:55.808740" elapsed="5.000423"/>
+<status status="PASS" start="2025-03-13T22:42:46.724426" elapsed="5.000934"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-03-08T20:13:00.809163" level="INFO">Clicking button 'xpath=//button[@type='submit' and contains(., 'Log in')]'.</msg>
-<arg>xpath=//button[@type='submit' and contains(., 'Log in')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T20:13:00.809163" elapsed="0.091175"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T22:42:51.725360" level="INFO">Typing text 'standard_user' into text field 'xpath=//*[@id="user-name"]'.</msg>
+<arg>xpath=//*[@id="user-name"]</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T22:42:51.725360" elapsed="0.095321"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T22:42:51.820681" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//*[@id="password"]'.</msg>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T22:42:51.820681" elapsed="0.081579"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T22:42:51.902260" level="INFO">Clicking element 'xpath=//*[@id="login-button"]'.</msg>
+<arg>xpath=//*[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T22:42:51.902260" elapsed="0.091761"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="add-to-cart-sauce-labs-backpack"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T22:42:51.994021" elapsed="0.057317"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T22:42:52.051877" level="INFO">Clicking element 'xpath=//button[@data-test="add-to-cart-sauce-labs-backpack"]'.</msg>
+<arg>xpath=//button[@data-test="add-to-cart-sauce-labs-backpack"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T22:42:52.051338" elapsed="0.053581"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T22:42:52.106473" level="INFO">Clicking element 'xpath=//*[@id="shopping_cart_container"]/a/span'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T22:42:52.104919" elapsed="0.052121"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T20:13:10.900463" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-03-13T22:42:57.158854" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T22:42:52.158579" elapsed="5.000275"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T22:42:57.160373" level="INFO">Clicking element 'xpath=//button[@id="continue-shopping"]'.</msg>
+<arg>xpath=//button[@id="continue-shopping"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T22:42:57.159864" elapsed="0.077528"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T22:43:07.237989" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T20:13:00.900338" elapsed="10.000125"/>
+<status status="PASS" start="2025-03-13T22:42:57.237392" elapsed="10.000597"/>
 </kw>
-<status status="PASS" start="2025-03-08T20:12:36.957412" elapsed="33.943051"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-13T22:43:07.239031" elapsed="3.874978"/>
+</kw>
+<status status="PASS" start="2025-03-13T22:42:42.343388" elapsed="28.772223"/>
 </test>
-<status status="PASS" start="2025-03-08T20:12:36.554778" elapsed="34.346192"/>
+<status status="PASS" start="2025-03-13T22:42:41.628761" elapsed="29.488435"/>
 </suite>
 <statistics>
 <total>
@@ -80,7 +90,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Web03" id="s1" pass="1" fail="0" skip="0">Web03</stat>
+<stat name="Web04" id="s1" pass="1" fail="0" skip="0">Web04</stat>
 </suite>
 </statistics>
 <errors>
